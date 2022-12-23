@@ -7,7 +7,7 @@ public class SignupwithGoogle {
     WebDriver driver;
     allfunction fun;
     @Test
-    public void SignupwithGoogle() {
+    public void SignupwithGoogle() throws InterruptedException {
         fun = new allfunction(driver);
         fun.startapp();
         fun.SigninwithGoogle();
