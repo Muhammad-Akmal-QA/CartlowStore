@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 06 10:33:12 PKT 2022</td>
+<td>Started on:</td><td>Mon Dec 19 15:09:40 PKT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (11 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (9 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='search.searchplp()'><b>searchplp</b><br>Test class: search</td>
-<td><div><pre>java.lang.NullPointerException
-	at allfunction.searchplp(allfunction.java:97)
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:77)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:46)
+	at allfunction.searchplp(allfunction.java:96)
 	at search.searchplp(search.java:14)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012095985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2012095985'><pre>java.lang.NullPointerException
-	at allfunction.searchplp(allfunction.java:97)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67811496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67811496'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:77)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:46)
+	at allfunction.searchplp(allfunction.java:96)
 	at search.searchplp(search.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -111,7 +119,7 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </pre></div></td>
 <td>0</td>
-<td>search@48974e45</td></tr>
+<td>search@4bb33f74</td></tr>
 </table><p>
 </body>
 </html>
